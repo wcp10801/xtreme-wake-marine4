@@ -1,0 +1,30 @@
+XTREME WAKE MARINE — EDITABLE SITE
+===================================
+
+He gets a small Admin button in the bottom-right corner of the site.
+He logs in with an email and a password HE chooses, then he can change
+prices, photos, boats, trucks, phone, hours, and the words on the pages.
+He clicks Publish. The live site updates in about a minute.
+
+ONE-TIME SETUP
+--------------
+1. This repo is already on GitHub.
+2. In Netlify: Add new site → Import an existing project → GitHub
+   → pick wcp10801/xtreme-wake-marine4.
+   Build command: leave blank
+   Publish directory: .  (a single dot)
+   Deploy.
+3. After it is live:
+   Site configuration → Identity → Enable Identity
+   Identity → Settings → Registration preferences → Invite only
+   Identity → Services → Enable Git Gateway
+4. Identity → Invite users → put HIS email → Send.
+   He opens the email, sets a password, opens the site, clicks Admin.
+
+HOW HE EDITS
+------------
+1. Open the website.
+2. Click Admin (bottom-right).
+3. Log in with the invite email and password.
+4. Edit Inventory or Shop info → Publish.
+5. Wait about a minute and refresh.
