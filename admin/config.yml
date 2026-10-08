@@ -1,0 +1,76 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+publish_mode: simple
+
+media_folder: photos/uploads
+public_folder: /photos/uploads
+
+logo_url: /photos/shop/logo.png
+
+collections:
+  - name: website
+    label: Website
+    files:
+      - name: settings
+        label: Shop info
+        file: content/settings.json
+        description: Phone, address, homepage, about, services, and shop photos.
+        fields:
+          - { label: Business name, name: businessName, widget: string }
+          - { label: Phone, name: phone, widget: string, hint: "Shown everywhere. Example 530-906-2022" }
+          - { label: Email, name: email, widget: string }
+          - { label: Street address, name: address, widget: string }
+          - { label: City and ZIP, name: city, widget: string }
+          - { label: Hours, name: hours, widget: text }
+          - { label: Homepage small line, name: heroEyebrow, widget: string }
+          - { label: Homepage headline, name: heroTitle, widget: string }
+          - { label: Homepage red line, name: heroAccent, widget: string }
+          - { label: Homepage paragraph, name: heroText, widget: text }
+          - { label: Homepage photo, name: heroImage, widget: image }
+          - { label: Brands line, name: brandsLine, widget: string }
+          - { label: About headline, name: aboutTitle, widget: string }
+          - { label: About text, name: aboutBody, widget: text }
+          - label: About bullets
+            name: aboutBullets
+            widget: list
+            hint: One short line per bullet.
+          - { label: Services intro, name: servicesIntro, widget: text }
+          - label: Services
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: body, widget: text }
+          - label: Shop photos
+            name: gallery
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: Photo, name: src, widget: image }
+              - { label: Caption, name: alt, widget: string }
+      - name: inventory
+        label: Inventory
+        file: content/inventory.json
+        description: Add a boat or vehicle, change a price, mark something sold, or swap the photo. Click Publish when you are done. The live site updates in about a minute.
+        fields:
+          - label: Boats and vehicles
+            name: items
+            widget: list
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Price, name: price, widget: string, hint: "How it should look on the site, like $43,999" }
+              - { label: Sold, name: sold, widget: boolean, default: false }
+              - label: Type
+                name: category
+                widget: select
+                options: ["Boat", "Vehicle"]
+                default: "Boat"
+              - { label: Hours or miles, name: hours, widget: string, required: false }
+              - { label: Description, name: blurb, widget: text }
+              - { label: Photo, name: image, widget: image, required: false }
+              - { label: Link id, name: slug, widget: string, required: false, hint: "Leave this alone on existing units. For a new one, type a short id like 2024-malibu-23lsv" }
