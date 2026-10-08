@@ -9,7 +9,7 @@
   "heroTitle": "Boat service",
   "heroAccent": "& sales",
   "heroText": "V-drive and direct-drive specialists. Full shop repairs, gelcoat, upgrades, plus used boats, trucks, and trailers — all from the shop on Meyers Street.",
-  "heroImage": "/photos/shop/hero-lot.jpg",
+  "heroImage": "hero-lot.jpg",
   "brandsLine": "Malibu · Nautique · Axis · MasterCraft · Tigé",
   "aboutTitle": "One-stop shop for wake boats",
   "aboutBody": "Xtreme Wake Marine LLC is a veteran-owned shop in Chico specializing in V-drive and direct-drive boats. Full-service repairs, used boat sales, vehicles, new and used trailers, consignment, and purchase.\n\nThe photos on this site are from the floor and the lot — the boats in the bay, the trucks on the pavement, and the shop at 247 Meyers Street.",
@@ -47,13 +47,13 @@
     }
   ],
   "gallery": [
-    {"src": "/photos/shop/hero-lot.jpg", "alt": "Xtreme Wake Marine lot on Meyers Street"},
-    {"src": "/photos/shop/shop-7775c2.jpg", "alt": "Wake boat in the shop"},
-    {"src": "/photos/shop/shop-47488.jpg", "alt": "Malibu on the trailer"},
-    {"src": "/photos/shop/shop-dc9bae.jpg", "alt": "Shop in Chico"},
-    {"src": "/photos/shop/shop-img2495.jpg", "alt": "Vehicles at the shop"},
-    {"src": "/photos/shop/shop-aae692.jpg", "alt": "Truck in inventory"},
-    {"src": "/photos/shop/shop-7768db.jpg", "alt": "Wake boat cockpit"},
-    {"src": "/photos/shop/shop-de36fa.jpg", "alt": "Shop exterior"}
+    {"src": "hero-lot.jpg", "alt": "Xtreme Wake Marine lot on Meyers Street"},
+    {"src": "shop-7775c2.jpg", "alt": "Wake boat in the shop"},
+    {"src": "shop-47488.jpg", "alt": "Malibu on the trailer"},
+    {"src": "shop-dc9bae.jpg", "alt": "Shop in Chico"},
+    {"src": "shop-img2495.jpg", "alt": "Vehicles at the shop"},
+    {"src": "shop-aae692.jpg", "alt": "Truck in inventory"},
+    {"src": "shop-7768db.jpg", "alt": "Wake boat cockpit"},
+    {"src": "shop-de36fa.jpg", "alt": "Shop exterior"}
   ]
 }
