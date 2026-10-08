@@ -8,7 +8,7 @@ publish_mode: simple
 media_folder: photos/uploads
 public_folder: /photos/uploads
 
-logo_url: /photos/shop/logo.png
+logo_url: /logo.png
 
 collections:
   - name: website
