@@ -18,7 +18,7 @@ function slugify(value) {
 }
 
 function img(path) {
-  if (!path) return "photos/shop/hero-lot.jpg";
+  if (!path) return "hero-lot.jpg";
   if (/^https?:/i.test(path)) return path;
   return String(path).replace(/^\//, "");
 }
@@ -193,6 +193,7 @@ function aboutPage() {
 
 function contactPage() {
   const s = SITE.settings;
+  const s2 = SITE.settings;
   return `<section><div class="wrap grid split">
     <div>
       <h1 style="font-size:clamp(40px,6vw,64px)">Contact</h1>
